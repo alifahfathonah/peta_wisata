@@ -231,7 +231,7 @@ class Maps
 		return ['status'=> 202, 'message'=> $ar];
 	}
 
-	public function deleteMaps($cid = null){
+	public function deleteMaps($pid = null){
 		if ($pid != null) {
 			$q = $this->con->query("DELETE FROM artikel WHERE artikel_id = '$pid'");
 			if ($q) {
